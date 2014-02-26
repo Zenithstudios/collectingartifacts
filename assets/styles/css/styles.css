@@ -327,9 +327,7 @@ button {
   outline: none;
   border: none;
 }
-button.hide {
-  opacity: 0;
-}
+
 
 footer {
   position: absolute;
@@ -686,78 +684,7 @@ footer .twitter-share-button {
   height: 24px;
 }
 
-.prompt.hide {
-  visibility: hidden;
-}
-.prompt.hide .panel {
-  -webkit-transform: translate3d(0,250%,0) rotateY(360deg);
-  -moz-transform: translate3d(0,250%,0) rotateY(360deg);
-  transform: translate3d(0,250%,0) rotateY(360deg);
-  opacity: 0;
-}
-.prompt .cell {
-  -webkit-perspective: 1000px;
-  -moz-perspective: 1000px;
-  perspective: 1000px;
-}
-.prompt .dismiss {
-  -webkit-transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  transform: scale(0.5);
-  background-color: transparent;
-  position: absolute;
-  right: 4px;
-  top: 4px;
-}
-.prompt .x, .prompt .y {
-  background: white;
-}
-.prompt .center {
-  max-width: 300px;
-  width: 82%;
-}
-.prompt .panel {
-  -webkit-perspective: none;
-  -moz-perspective: none;
-  perspective: none;
-  -webkit-transform-style: flat;
-  -moz-transform-style: flat;
-  transform-style: flat;
-  -webkit-transition: all 1.8s cubic-bezier(0.77, 0, 0.175, 1);
-  -moz-transition: all 1.8s cubic-bezier(0.77, 0, 0.175, 1);
-  transition: all 1.8s cubic-bezier(0.77, 0, 0.175, 1);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  background-color: rgba(0, 0, 0, 0.65);
-  padding: 1.2em 0 1.8em;
-}
-.prompt .panel img {
-  margin: 0.6em auto;
-  width: 100px;
-}
-.prompt .panel h2 {
-  margin: 0 0 0.4em;
-}
-.prompt .panel p {
-  font-size: 1.25em;
-  margin: 0 10% 1.25em;
-  line-height: 1.25em;
-  color: #999999;
-}
-.prompt .tilt-scene {
-  -webkit-perspective: 1000px;
-  -moz-perspective: 1000px;
-  perspective: 1000px;
-  -webkit-transform: translate3d(0,0,100px);
-  -moz-transform: translate3d(0,0,100px);
-  transform: translate3d(0,0,100px);
-  margin: 0 auto;
-  width: 60%;
-}
-.prompt .tilt {
-  -webkit-animation: tilt 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  -moz-animation: tilt 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  animation: tilt 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
+
 
 .scene,
 .layer {
@@ -1373,9 +1300,7 @@ footer .twitter-share-button {
     bottom: 12%;
   }
 
-  .prompt .panel img {
-    width: 80px;
-  }
+
 
   .scene {
     min-height: 360px;
@@ -1510,49 +1435,7 @@ footer .twitter-share-button {
     background-size: 82.5px 112.5px;
   }
 
-  .prompt {
-    overflow: visible;
-    display: block;
-    width: 0;
-  }
-  .prompt.hide .panel {
-    -webkit-transform: translate3d(0,50%,400px) rotateX(90deg);
-    -moz-transform: translate3d(0,50%,400px) rotateX(90deg);
-    transform: translate3d(0,50%,400px) rotateX(90deg);
-  }
-  .prompt .cell {
-    position: absolute;
-    display: block;
-    bottom: 25px;
-    left: 25px;
-  }
-  .prompt .dismiss {
-    right: 0px;
-    top: 0px;
-  }
-  .prompt .panel {
-    -webkit-transition: all 1.2s cubic-bezier(0.77, 0, 0.175, 1);
-    -moz-transition: all 1.2s cubic-bezier(0.77, 0, 0.175, 1);
-    transition: all 1.2s cubic-bezier(0.77, 0, 0.175, 1);
-    -webkit-transform-origin: 50% 100%;
-    -moz-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    padding: 1em 0 0.8em;
-    width: 220px;
-  }
-  .prompt .panel img {
-    margin: 0.4em auto 0.6em;
-    width: 80px;
-  }
-  .prompt .panel h2 {
-    font-size: 1.6em;
-  }
-  .prompt .panel p {
-    font-size: 0.93333em;
-    margin: 0 10% 1.3em;
-    line-height: 1.3em;
-  }
-
+  
   .toggle {
     margin: -28px;
     bottom: 15%;
@@ -2066,9 +1949,7 @@ footer .twitter-share-button {
     background-size: 93.5px 127.5px;
   }
 
-  .prompt .panel {
-    width: 240px;
-  }
+
 
   .lighthouse {
     margin: 0px -112px;
