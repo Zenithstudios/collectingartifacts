@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="mouse"><head>
+
+	<meta charset="utf-8">
+
+	<title>A R T I F A C T .</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Core Meta Data -->
+	<meta name="author" content="Jed">
+	<meta name="description" content="Simple, lightweight Parallax Engine that reacts to the orientation of a smart device">
+	<meta name="keywords" content="parallax,javascript,jquery,zepto,plugin">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/styles/css/styles.css">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.png" type="image/png">
+	<link rel="shortcut icon" href="http://wagerfield.github.io/parallax/favicon.png" type="image/png">
+
+	<!-- Apple Touch Icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57-precomposed.png">
+
+	<!-- Apple Startup Images -->
+	<link rel="apple-touch-startup-image" href="apple-touch-startup-image-320x460.png" media="(device-width: 320px)">
+	<link rel="apple-touch-startup-image" href="apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="apple-touch-startup-image" href="apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (orientation: portrait)">
+	<link rel="apple-touch-startup-image" href="apple-touch-startup-image-748x1024.png" media="(device-width: 768px) and (orientation: landscape)">
+	<link rel="apple-touch-startup-image" href="apple-touch-startup-image-1536x2008.png" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="apple-touch-startup-image" href="apple-touch-startup-image-2048x1496.png" media="(device-width: 1536px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
+
+</head>
+<body style="" data-twttr-rendered="true">
+
+	<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" src="http://static.ak.facebook.com/connect/xd_arbiter.php?version=29#channel=f3817a034&amp;channel_path=%2Fparallax%2F%3Ffb_xd_fragment%23xd_sig%3Df14438954c%26&amp;origin=http%3A%2F%2Fwagerfield.github.io" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" src="https://s-static.ak.facebook.com/connect/xd_arbiter.php?version=29#channel=f3817a034&amp;channel_path=%2Fparallax%2F%3Ffb_xd_fragment%23xd_sig%3Df14438954c%26&amp;origin=http%3A%2F%2Fwagerfield.github.io" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+
+	<div id="container" class="wrapper">
+		<ul id="scene" class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" style="width: 1453px; height: 533px; -webkit-transform: translate3d(0, 0, 0); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;" data-mode="cursor">
+			<li class="layer" data-depth="0.00" style="position: relative; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0%, 0%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"></li>
+			<li class="layer" data-depth="0.05" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(1.9769442531144283%, -1.4437148162442117%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="background"></div></li>
+			
+			
+						
+			<li class="layer" data-depth="0.10" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(1.9769442531144283%, -1.4437148162442117%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="light orange b phase-4"></div></li>
+			<li class="layer" data-depth="0.10" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(1.9769442531144283%, -1.4437148162442117%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="light purple c phase-5"></div></li>
+			<li class="layer" data-depth="0.10" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(1.9769442531144283%, -1.4437148162442117%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="light orange d phase-3"></div></li>
+			<li class="layer" data-depth="0.15" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(2.9654163796716424%, -2.1655722243663176%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;">
+				<ul class="rope depth-10">
+					<li><img src="assets/images/rope.png" alt="Rope"></li>
+					<li class="hanger position-2">
+						<div class="board cloud-2 swing-1"></div>
+					</li>
+					<li class="hanger position-4">
+						<div class="board cloud-1 swing-3"></div>
+					</li>
+					<li class="hanger position-8">
+						<div class="board birds swing-5"></div>
+					</li>
+				</ul>
+				<ul class="spaceman depth-10">
+					<li><img src="assets/images/spaceman.png" alt="Rope"></li>
+				</ul>
+			</li>
+			<li class="layer" data-depth="0.20" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(3.9538885062288567%, -2.8874296324884234%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><h1 class="title" align="left">A R T <em>I</em> F A C T .</h1>
+			<ul>
+			</ul>
+			</li>
+			<li class="layer" data-depth="0.30" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(5.930832759343285%, -4.331144448732635%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;">
+				<ul class="rope depth-30">
+					<li><img src="assets/images/rope.png" alt="Rope"></li>
+					<li class="hanger position-1">
+						<div class="board cloud-1 swing-3"></div>
+					</li>
+					<li class="hanger position-5">
+						<div class="board cloud-4 swing-1"></div>
+					</li>
+				</ul>
+			</li>
+			<li class="layer" data-depth="0.30" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(5.930832759343285%, -4.331144448732635%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave paint depth-30"></div></li>
+			<li class="layer" data-depth="0.40" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(7.907777012457713%, -5.774859264976847%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave plain depth-40"></div></li>
+			<li class="layer" data-depth="0.50" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(9.884721265572141%, -7.218574081221059%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave paint depth-50"></div></li>
+			
+			<li class="layer" data-depth="0.60" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(11.86166551868657%, -8.66228889746527%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="lighthouse depth-60"></div></li>
+
+			<li class="layer" data-depth="0.60" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(11.86166551868657%, -8.66228889746527%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;">
+				<ul class="rope depth-60">
+					<li><img src="assets/images/rope.png" alt="Rope"></li>
+					<li class="hanger position-3">
+						<div class="board birds swing-5"></div>
+					</li>
+					<li class="hanger position-6">
+						<div class="board cloud-2 swing-2"></div>
+					</li>
+					<li class="hanger position-8">
+						<div class="board cloud-3 swing-4"></div>
+					</li>
+				</ul>
+			</li>
+			<li class="layer" data-depth="0.60" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(11.86166551868657%, -8.66228889746527%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave plain depth-60"></div></li>
+			<li class="layer" data-depth="0.80" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(15.815554024915427%, -11.549718529953694%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave plain depth-80"></div></li>
+			<li class="layer" data-depth="1.00" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(19.769442531144282%, -14.437148162442117%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave paint depth-100"></div></li>
+			<li class="layer" data-depth="0.10" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(1.9769442531144283%, -1.4437148162442117%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="sky container"></div></li>
+		</ul>
+		<section id="about" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<header>
+							<h1><em>A R T</em> I <em>F A C T .</em></h1>
+						</header>
+						<p align="left"><strong>ar•ti•fact |ˈärtəˌfakt|</strong> 
+							<br>
+							noun
+							<br>
+							<br>
+							<strong>1.</strong> an object made by a human being, typically an item of cultural or historical interest : gold and silver artifacts.
+							• Archaeology such an object as distinguished from a similar object naturally produced.
+							<br>
+							<br>
+							<strong>2.</strong> something observed in a scientific investigation or experiment that is not naturally present but occurs as a result of the preparative or investigative procedure : widespread tissue infection may be a technical artifact.
+							<br>
+							<br>
+							<strong>DERIVATIVES</strong>
+							artifactual |ˌärtəˈfak ch oōəl| adjective
+							ORIGIN early 19th cent.: from Latin arte ‘<em><strong>by or using art</strong></em>’ + factum ‘<em><strong>something made</strong></em>’ (neuter past participle of facere ‘<em><strong>make</strong></em>’ ).
+							<br>
+							<br>
+						</p>
+						
+						<ul class="links">
+							<li><a href="http://www.soundcloud.com/collectingartifacts" target="_blank">Soundcloud</a></li>
+							<li><a href="http://artifactmusic.bandcamp.com" target="_blank">Bandcamp</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<button id="toggle" class="toggle i">
+			<div class="cross">
+				<div class="x"></div>
+				<div class="y"></div>
+			</div>
+		</button>
+		<div id="prompt" class="wrapper prompt accelerate">
+			<div class="cell accelerate">
+				<div class="panel center unselectable accelerate">
+					<button id="dismiss" class="dismiss">
+						<div class="cross">
+							<div class="x"></div>
+							<div class="y"></div>
+						</div>
+					</button>
+					<div class="tilt-scene">
+						<img class="tilt" src="assets/images/tilt.png">
+					</div>
+					<h2>Tilting is fun!</h2>
+					<p>For the best experience, check out this site on a mobile or tablet equipped with a gyroscope</p>
+					
+				</div>
+			</div>
+		</div>
+		<footer>
+			
+		</footer>
+	</div>
+
+	
+
+	<!-- Scripts -->
+	<script src="assets/scripts/js/libraries.min.js"></script>
+	<script src="deploy/jquery.parallax.js"></script>
+	<script>
+
+	// jQuery Selections
+	var $html = $('html'),
+			$container = $('#container'),
+			$prompt = $('#prompt'),
+			$toggle = $('#toggle'),
+			$about = $('#about'),
+			$scene = $('#scene');
+
+	// Hide browser menu.
+	(function() {
+		setTimeout(function(){window.scrollTo(0,0);},0);
+	})();
+
+	// Setup FastClick.
+	FastClick.attach(document.body);
+
+	// Add touch functionality.
+	if (Hammer.HAS_TOUCHEVENTS) {
+		$container.hammer({drag_lock_to_axis: true});
+		_.tap($html, 'a,button,[data-tap]');
+	}
+
+	// Add touch or mouse class to html element.
+	$html.addClass(Hammer.HAS_TOUCHEVENTS ? 'touch' : 'mouse');
+
+	// Resize handler.
+	(resize = function() {
+		$scene[0].style.width = window.innerWidth + 'px';
+		$scene[0].style.height = window.innerHeight + 'px';
+		if (!$prompt.hasClass('hide')) {
+			if (window.innerWidth < 600) {
+				$toggle.addClass('hide');
+			} else {
+				$toggle.removeClass('hide');
+			}
+		}
+	})();
+
+	// Attach window listeners.
+	window.onresize = _.debounce(resize, 200);
+	window.onscroll = _.debounce(resize, 200);
+
+	function showDetails() {
+		$about.removeClass('hide');
+		$toggle.removeClass('i');
+	}
+
+	function hideDetails() {
+		$about.addClass('hide');
+		$toggle.addClass('i');
+	}
+
+	// Listen for toggle click event.
+	$toggle.on('click', function(event) {
+		$toggle.hasClass('i') ? showDetails() : hideDetails();
+	});
+
+	// Pretty simple huh?
+	$scene.parallax();
+
+	// Check for orientation support.
+	setTimeout(function() {
+		if ($scene.data('mode') === 'cursor') {
+			$prompt.removeClass('hide');
+			if (window.innerWidth < 600) $toggle.addClass('hide');
+			$prompt.on('click', function(event) {
+				$prompt.addClass('hide');
+				if (window.innerWidth < 600) {
+					setTimeout(function() {
+						$toggle.removeClass('hide');
+					},1200);
+				}
+			});
+		}
+	},1000);
+
+	// Twitter stuff.
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+	// Facebook stuff.
+	(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=709933052350821";
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+
+</body></html>
