@@ -1297,9 +1297,6 @@ footer .twitter-share-button {
     bottom: 12%;
   }
 
-  .prompt .panel img {
-    width: 80px;
-  }
 
   .scene {
     min-height: 360px;
@@ -1434,48 +1431,7 @@ footer .twitter-share-button {
     background-size: 82.5px 112.5px;
   }
 
-  .prompt {
-    overflow: visible;
-    display: block;
-    width: 0;
-  }
-  .prompt.hide .panel {
-    -webkit-transform: translate3d(0,50%,400px) rotateX(90deg);
-    -moz-transform: translate3d(0,50%,400px) rotateX(90deg);
-    transform: translate3d(0,50%,400px) rotateX(90deg);
-  }
-  .prompt .cell {
-    position: absolute;
-    display: block;
-    bottom: 25px;
-    left: 25px;
-  }
-  .prompt .dismiss {
-    right: 0px;
-    top: 0px;
-  }
-  .prompt .panel {
-    -webkit-transition: all 1.2s cubic-bezier(0.77, 0, 0.175, 1);
-    -moz-transition: all 1.2s cubic-bezier(0.77, 0, 0.175, 1);
-    transition: all 1.2s cubic-bezier(0.77, 0, 0.175, 1);
-    -webkit-transform-origin: 50% 100%;
-    -moz-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    padding: 1em 0 0.8em;
-    width: 220px;
-  }
-  .prompt .panel img {
-    margin: 0.4em auto 0.6em;
-    width: 80px;
-  }
-  .prompt .panel h2 {
-    font-size: 1.6em;
-  }
-  .prompt .panel p {
-    font-size: 0.93333em;
-    margin: 0 10% 1.3em;
-    line-height: 1.3em;
-  }
+ 
 
   .toggle {
     margin: -28px;
