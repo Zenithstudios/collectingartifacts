@@ -45,6 +45,8 @@
         img { display: block; }
     </style>
 <!--Adobe Edge Runtime End-->
+    
+    
 
 </head>
 <body style="" data-twttr-rendered="true">
@@ -234,7 +236,22 @@
 		}
 	},1000);
 	</script>
+    
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+    //]]>
+</script>
 
-
-
-</body></html>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    
+</body>
+    <!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+</html>
