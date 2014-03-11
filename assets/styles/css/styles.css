@@ -482,13 +482,7 @@ footer .twitter-share-button {
   top: -837px;
   z-index: 1;
 }
-.about .panel {
-  -webkit-transform-origin: 50% 0%;
-  -moz-transform-origin: 50% 0%;
-  transform-origin: 50% 0%;
-  background: #f2f2f2 url(../../images/panel.jpg) -7px 0;
-  background-size: 399px 357px;
-}
+
 .about .panel:before {
   border-left: 1px dashed rgba(29, 31, 39, 0.2);
   position: absolute;
@@ -498,45 +492,11 @@ footer .twitter-share-button {
   left: 5%;
   top: 0;
 }
-.about .panel:after {
-  -webkit-border-radius: 0 0 6px 0;
-  -moz-border-radius: 0 0 6px 0;
-  border-radius: 0 0 6px 0;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
-  background: transparent url(../../images/compass.png) 0 0 no-repeat;
-  background-size: 224px 224px;
-  position: absolute;
-  display: block;
-  height: 160px;
-  width: 120px;
-  opacity: 0.2;
-  content: "";
-  bottom: 0;
-  right: 0;
-}
+
 .about .panel header {
   padding: 1em 0 1em;
 }
-.about .panel header:before {
-  -webkit-border-radius: 6px 0 0 0;
-  -moz-border-radius: 6px 0 0 0;
-  border-radius: 6px 0 0 0;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
-  background: transparent url(../../images/map.png) 0 0 no-repeat;
-  background-size: 60.5px 82.5px;
-  position: absolute;
-  display: block;
-  height: 150px;
-  width: 110px;
-  opacity: 0.8;
-  content: "";
-  left: 0;
-  top: 0;
-}
+
 .about .panel h1 {
   font-weight: 100;
   color: #d92400;
@@ -2616,7 +2576,7 @@ html.touch .links a.tap {
     position:absolute;
     left:50%; /* centers the loading animation horizontally one the screen */
     top:50%; /* centers the loading animation vertically one the screen */
-    background-image:url(../img/status.gif); /* path to your loading animation */
+    background-image:url(assets/images/status.gif); /* path to your loading animation */
     background-repeat:no-repeat;
     background-position:center;
     margin:-100px 0 0 -100px; /* is width and height divided by two */
