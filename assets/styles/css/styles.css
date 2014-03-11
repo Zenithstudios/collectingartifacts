@@ -482,7 +482,13 @@ footer .twitter-share-button {
   top: -837px;
   z-index: 1;
 }
-
+.about .panel {
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  background: #f2f2f2 -7px 0;
+  background-size: 399px 357px;
+}
 .about .panel:before {
   border-left: 1px dashed rgba(29, 31, 39, 0.2);
   position: absolute;
